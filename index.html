@@ -13,7 +13,8 @@
     <!-- BANNER AD SCRIPT -->
     <script async src="https://ss.mrmnd.com/banner.js"></script>
     
-    <!-- IN-PAGE PUSH ADS (5x FOR MAX REVENUE - CORNERS & ANGLES) -->
+    <!-- IN-PAGE PUSH ADS (5x FOR MAX CORNER COVERAGE) -->
+    <!-- These scripts automatically place pushes in screen corners/angles -->
     <script async src="https://ss.mrmnd.com/static/a2b322e4-dfd7-4135-9df1-4bd0edb3257e.js"></script>
     <script async src="https://ss.mrmnd.com/static/a2b322e4-dfd7-4135-9df1-4bd0edb3257e.js"></script>
     <script async src="https://ss.mrmnd.com/static/a2b322e4-dfd7-4135-9df1-4bd0edb3257e.js"></script>
@@ -48,7 +49,7 @@
             background: var(--bg-primary);
             color: var(--text-primary);
             line-height: 1.7;
-            min-height: 300vh; /* Long page for scrolling */
+            overflow-x: hidden;
         }
 
         .bg-glow {
@@ -82,6 +83,9 @@
             font-size: 0.9rem;
             letter-spacing: 0.5px;
             animation: pulse-bg 2s infinite;
+            position: sticky;
+            top: 0;
+            z-index: 100;
         }
 
         @keyframes pulse-bg {
@@ -252,14 +256,18 @@
 
         /* Banner Ad Styling */
         .banner-slot {
-            margin: 15px 0;
-            min-height: 100px;
+            margin: 8px 0;
+            min-height: 90px;
             background: rgba(255, 255, 255, 0.02);
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: 1px dashed var(--border-color);
+            border-radius: 4px;
+            display: block; /* Ensures it takes space */
+            text-align: center;
+        }
+
+        /* Hide empty banners gracefully */
+        .banner-slot:empty {
+            min-height: 0;
+            margin: 0;
         }
 
         /* Urgency Section */
@@ -328,31 +336,44 @@
             <span class="badge">🔥 Viral Secret</span>
         </header>
 
+        <!-- ==================== TOP 30 BANNERS BLOCK ==================== -->
+        <!-- Money talks right at the start -->
+        <div class="top-banners">
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+        </div>
+        <!-- ==================== END TOP BANNERS ==================== -->
+
         <article>
             <h1>Increase Length and Stamina of Your Penis in Just <span>5 Days</span> – Doctors Hate This Secret!</h1>
-
-            <!-- ===== 20 BANNERS AT THE TOP (FIRST SIGHT) ===== -->
-            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
-            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
-            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
-            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
-            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
-            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
-            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
-            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
-            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
-            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
-            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
-            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
-            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
-            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
-            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
-            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
-            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
-            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
-            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
-            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
-            <!-- ===== END 20 BANNERS ===== -->
 
             <p class="intro">
                 Bro… yes, <strong>you</strong>. Are you tired of weak erections, short performance, or finishing too early?<br><br>
@@ -421,6 +442,42 @@
 
         </article>
 
+        <!-- ==================== BOTTOM 30 BANNERS BLOCK ==================== -->
+        <!-- The final money trap -->
+        <div class="bottom-banners">
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+        </div>
+        <!-- ==================== END BOTTOM BANNERS ==================== -->
+
         <!-- Final CTA Section -->
         <div class="final-cta">
             <p>Don't let another day pass. The solution is one click away.</p>
@@ -430,44 +487,38 @@
 
     <script>
         // =============================================
-        // UNSTOPPABLE ALIEN AUTO-SCROLL
+        // ALIEN AUTO-SCROLL (UNSTOPPABLE)
         // =============================================
         
-        window.onload = function() {
+        // Configuration
+        const startDelay = 4000; // Start after 4 seconds
+        const totalScrollDuration = 8000; // Must finish scrolling in 8 seconds (approx 5+ secs for viewable content)
+        
+        let scrollStartTime = null;
+        let scrollRequested = false;
+
+        function autoScroll(timestamp) {
+            if (!scrollStartTime) scrollStartTime = timestamp;
             
-            // 1. Wait 4 seconds before starting
-            setTimeout(function() {
-                
-                // 2. Calculate the destination (bottom of page)
-                var totalHeight = document.body.scrollHeight;
-                var windowHeight = window.innerHeight;
-                var scrollTarget = totalHeight - windowHeight;
-                
-                // 3. Set duration to exactly 5 seconds (5000ms)
-                var duration = 5000; 
-                var startTime = null;
-                
-                function step(timestamp) {
-                    if (!startTime) startTime = timestamp;
-                    
-                    var progress = timestamp - startTime;
-                    var percentage = progress / duration;
-                    
-                    // Ease-out logic for smooth slowdown
-                    var easeOut = 1 - Math.pow(1 - percentage, 3);
-                    
-                    window.scrollTo(0, scrollTarget * easeOut);
-                    
-                    if (progress < duration) {
-                        window.requestAnimationFrame(step);
-                    }
-                }
-                
-                // Start the animation
-                window.requestAnimationFrame(step);
-                
-            }, 4000); // 4 second delay
-        };
+            const progress = timestamp - scrollStartTime;
+            const scrollAmount = (document.body.scrollHeight - window.innerHeight) * (progress / totalScrollDuration);
+            
+            // Scroll strictly by calculated amount to ensure steady pace
+            window.scrollTo(0, scrollAmount);
+
+            if (progress < totalScrollDuration) {
+                window.requestAnimationFrame(autoScroll);
+            }
+        }
+
+        // Start the process
+        setTimeout(function() {
+            window.requestAnimationFrame(autoScroll);
+        }, startDelay);
+
+        // Note: This scroll is UNSTOPPABLE as requested.
+        // It ignores user wheel/touch inputs to ensure all 60 banners are passed over.
+        
     </script>
 </body>
 </html>
