@@ -3,20 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="mnd-ver" content="dcjv4jg1rmeybegqphdfw" />
-    <title>5-Day Secret - Men's Health Alert</title>
+    <title>5-Day Secret Doctors Hate - Men's Health</title>
+    
+    <!-- ========== AD CODES - HEAD SECTION ========== -->
+    
+    <!-- INTERSTITIAL AD -->
+    <script async src="https://ss.mrmnd.com/interstitial.js" data-mndintid="febb5958-afc0-47d3-bb29-e375d2d7c871"></script>
+    
+    <!-- BANNER AD SCRIPT -->
+    <script async src="https://ss.mrmnd.com/banner.js"></script>
+    
+    <!-- IN-PAGE PUSH ADS (5x FOR MAX REVENUE - CORNERS & ANGLES) -->
+    <script async src="https://ss.mrmnd.com/static/a2b322e4-dfd7-4135-9df1-4bd0edb3257e.js"></script>
+    <script async src="https://ss.mrmnd.com/static/a2b322e4-dfd7-4135-9df1-4bd0edb3257e.js"></script>
+    <script async src="https://ss.mrmnd.com/static/a2b322e4-dfd7-4135-9df1-4bd0edb3257e.js"></script>
+    <script async src="https://ss.mrmnd.com/static/a2b322e4-dfd7-4135-9df1-4bd0edb3257e.js"></script>
+    <script async src="https://ss.mrmnd.com/static/a2b322e4-dfd7-4135-9df1-4bd0edb3257e.js"></script>
+    
+    <!-- ========== END AD CODES ========== -->
+
     <style>
-        /* URGENT & SHOCKING PALETTE */
         :root {
-            --bg-primary: #080808;
-            --bg-secondary: #0f0f0f;
-            --bg-card: #141414;
-            --text-primary: #f5f5f5;
-            --text-secondary: #a0a0a0;
-            --accent-red: #ff2a2a;
-            --accent-red-dark: #b30000;
-            --accent-gold: #ffd700;
-            --border-color: #222;
+            --bg-primary: #08080a;
+            --bg-secondary: #0f0f14;
+            --bg-card: #16161d;
+            --text-primary: #f0f0f0;
+            --text-secondary: #a0a0a8;
+            --accent-red: #dc2626;
+            --accent-red-dark: #991b1b;
+            --accent-amber: #f59e0b;
+            --accent-amber-dark: #d97706;
+            --accent-green: #22c55e;
+            --border-color: #2a2a35;
         }
 
         * {
@@ -26,444 +44,430 @@
         }
 
         body {
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            background-color: var(--bg-primary);
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-primary);
             color: var(--text-primary);
-            line-height: 1.6;
-            overflow-x: hidden;
+            line-height: 1.7;
+            min-height: 300vh; /* Long page for scrolling */
         }
 
-        /* URGENCY HEADER */
-        .urgency-header {
-            background: linear-gradient(90deg, var(--accent-red-dark), var(--accent-red), var(--accent-red-dark));
-            color: white;
-            text-align: center;
-            padding: 12px;
-            font-weight: bold;
-            font-size: 0.9rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            animation: pulse-bg 2s infinite;
-        }
-
-        @keyframes pulse-bg {
-            0% { opacity: 0.9; }
-            50% { opacity: 1; }
-            100% { opacity: 0.9; }
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 30px 20px;
-        }
-
-        /* HERO SECTION */
-        .hero {
-            text-align: center;
-            margin-bottom: 40px;
-            padding-bottom: 30px;
-            border-bottom: 1px solid var(--border-color);
-        }
-
-        .hero h1 {
-            font-size: 2.5rem;
-            line-height: 1.2;
-            margin-bottom: 20px;
-            color: white;
-            text-shadow: 0 0 10px rgba(255, 42, 42, 0.3);
-        }
-
-        .hero h1 span {
-            color: var(--accent-red);
-        }
-
-        .warning-box {
-            background: rgba(255, 42, 42, 0.1);
-            border: 1px solid var(--accent-red);
-            color: #ffcccc;
-            padding: 15px;
-            border-radius: 8px;
-            display: inline-block;
-            font-weight: bold;
-            font-size: 0.9rem;
-            margin-bottom: 20px;
-        }
-
-        /* CONTENT STYLING */
-        .content-block {
-            margin-bottom: 35px;
-        }
-
-        .content-block h2 {
-            color: var(--accent-red);
-            font-size: 1.5rem;
-            margin-bottom: 15px;
-            display: flex;
-            align-items: center;
-        }
-
-        .content-block h2::before {
-            content: '🔥';
-            margin-right: 10px;
-            font-size: 1.2rem;
-        }
-
-        .content-block p {
-            color: var(--text-secondary);
-            font-size: 1.05rem;
-            margin-bottom: 15px;
-        }
-
-        .highlight-text {
-            color: white;
-            font-weight: 600;
-            background: linear-gradient(to right, transparent, rgba(255, 215, 0, 0.1), transparent);
-            padding: 5px 0;
-        }
-
-        ul {
-            list-style: none;
-            margin: 20px 0;
-        }
-
-        ul li {
-            position: relative;
-            padding-left: 25px;
-            margin-bottom: 12px;
-            color: #cccccc;
-        }
-
-        ul li::before {
-            content: '⚠️';
-            position: absolute;
-            left: 0;
-            top: 2px;
-            font-size: 0.9rem;
-        }
-
-        /* FAKE COMMENT SECTION (Visual Bait) */
-        .comments-section {
-            background: var(--bg-card);
-            padding: 20px;
-            border-radius: 10px;
-            border: 1px solid var(--border-color);
-            margin-top: 40px;
-        }
-
-        .comments-section h3 {
-            color: white;
-            margin-bottom: 15px;
-            font-size: 1.1rem;
-        }
-
-        .comment {
-            display: flex;
-            gap: 10px;
-            margin-bottom: 15px;
-            padding-bottom: 15px;
-            border-bottom: 1px solid var(--border-color);
-        }
-
-        .comment-avatar {
-            width: 35px;
-            height: 35px;
-            background: #333;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.8rem;
-            color: #666;
-            flex-shrink: 0;
-        }
-
-        .comment-content {
-            flex: 1;
-        }
-
-        .comment-content strong {
-            color: var(--accent-gold);
-            font-size: 0.9rem;
-        }
-
-        .comment-content p {
-            color: #aaa;
-            font-size: 0.9rem;
-            margin-top: 3px;
-        }
-
-        /* MODAL STYLES - Professional & Urgent */
-        .modal-overlay {
+        .bg-glow {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.9);
-            backdrop-filter: blur(5px);
-            z-index: 9999;
-            display: none;
-            align-items: center;
-            justify-content: center;
-            opacity: 0;
-            transition: opacity 0.3s;
+            pointer-events: none;
+            z-index: 0;
+            background: 
+                radial-gradient(ellipse at 50% 0%, rgba(220, 38, 38, 0.08) 0%, transparent 50%),
+                radial-gradient(ellipse at 20% 80%, rgba(245, 158, 11, 0.05) 0%, transparent 40%);
         }
 
-        .modal-overlay.active {
-            display: flex;
-            opacity: 1;
+        .container {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px 15px;
         }
 
-        .modal-box {
-            background: #fff;
-            border-radius: 15px;
-            padding: 0;
-            width: 90%;
-            max-width: 400px;
-            text-align: center;
-            overflow: hidden;
-            transform: scale(0.9);
-            transition: transform 0.3s;
-            box-shadow: 0 0 30px rgba(255, 42, 42, 0.2);
-        }
-
-        .modal-overlay.active .modal-box {
-            transform: scale(1);
-        }
-
-        .modal-header {
-            background: var(--accent-red);
+        /* Warning Banner */
+        .warning-banner {
+            background: linear-gradient(90deg, var(--accent-red-dark), var(--accent-red), var(--accent-red-dark));
             color: white;
-            padding: 20px;
+            text-align: center;
+            padding: 12px 20px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            letter-spacing: 0.5px;
+            animation: pulse-bg 2s infinite;
         }
 
-        .modal-header h3 {
-            font-size: 1.3rem;
-            font-weight: 800;
+        @keyframes pulse-bg {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.85; }
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            padding: 25px 15px;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 25px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: var(--accent-amber);
+            color: #000;
+            font-size: 0.7rem;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 20px;
             text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
         }
 
-        .modal-body {
-            padding: 30px 20px;
-            background: white;
+        /* Article */
+        article {
+            padding: 0 10px;
         }
 
-        .modal-body p {
-            color: #333;
-            font-size: 1.1rem;
+        article h1 {
+            font-size: 1.8rem;
+            line-height: 1.3;
+            color: var(--text-primary);
             margin-bottom: 20px;
+            text-align: center;
+        }
+
+        article h1 span {
+            color: var(--accent-red);
+        }
+
+        article h2 {
+            font-size: 1.25rem;
+            color: var(--accent-amber);
+            margin: 35px 0 15px 0;
+            padding-left: 15px;
+            border-left: 3px solid var(--accent-amber);
+        }
+
+        article p {
+            color: var(--text-secondary);
+            margin-bottom: 18px;
+            font-size: 1.05rem;
+        }
+
+        article p.intro {
+            font-size: 1.15rem;
+            color: var(--text-primary);
+            text-align: center;
+            padding: 20px;
+            background: var(--bg-card);
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+        }
+
+        article ul {
+            margin: 20px 0;
+            padding-left: 0;
+            list-style: none;
+        }
+
+        article ul li {
+            color: var(--text-secondary);
+            padding: 10px 0 10px 30px;
+            position: relative;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        article ul li::before {
+            content: "✗";
+            position: absolute;
+            left: 0;
+            color: var(--accent-red);
+            font-weight: bold;
+        }
+
+        article ul li:last-child {
+            border-bottom: none;
+        }
+
+        /* Highlight Boxes */
+        .shock-box {
+            background: linear-gradient(135deg, rgba(220, 38, 38, 0.15) 0%, rgba(220, 38, 38, 0.05) 100%);
+            border: 1px solid rgba(220, 38, 38, 0.3);
+            border-left: 4px solid var(--accent-red);
+            padding: 20px;
+            border-radius: 0 12px 12px 0;
+            margin: 25px 0;
+        }
+
+        .shock-box p {
+            color: var(--text-primary);
+            margin: 0;
+            font-weight: 500;
+        }
+
+        .success-box {
+            background: linear-gradient(135deg, rgba(34, 197, 94, 0.15) 0%, rgba(34, 197, 94, 0.05) 100%);
+            border: 1px solid rgba(34, 197, 94, 0.3);
+            padding: 20px;
+            border-radius: 12px;
+            margin: 25px 0;
+            text-align: center;
+        }
+
+        .success-box p {
+            color: var(--accent-green);
+            margin: 0;
             font-weight: 600;
         }
 
-        .modal-buttons {
-            display: flex;
-            gap: 15px;
-            justify-content: center;
+        /* CTA Buttons */
+        .cta-container {
+            text-align: center;
+            margin: 30px 0;
         }
 
-        .verify-btn {
-            flex: 1;
-            padding: 15px;
-            border: none;
-            border-radius: 8px;
-            font-size: 1rem;
-            font-weight: 700;
-            cursor: pointer;
-            transition: transform 0.2s, box-shadow 0.2s;
-            text-transform: uppercase;
-        }
-
-        .verify-btn.male {
-            background: #000;
+        .cta-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--accent-red) 0%, var(--accent-red-dark) 100%);
             color: white;
+            font-size: 1.1rem;
+            font-weight: 700;
+            padding: 18px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 8px 30px rgba(220, 38, 38, 0.4);
+            transition: all 0.3s ease;
+            animation: pulse-btn 2s infinite;
         }
 
-        .verify-btn.female {
-            background: #f0f0f0;
-            color: #333;
-            border: 2px solid #000;
+        .cta-btn:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 12px 40px rgba(220, 38, 38, 0.5);
         }
 
-        .verify-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        @keyframes pulse-btn {
+            0%, 100% { box-shadow: 0 8px 30px rgba(220, 38, 38, 0.4); }
+            50% { box-shadow: 0 8px 40px rgba(220, 38, 38, 0.6); }
         }
 
-        .modal-footer {
-            background: #f9f9f9;
-            padding: 15px;
-            font-size: 0.8rem;
-            color: #888;
+        .cta-btn.secondary {
+            background: linear-gradient(135deg, var(--accent-amber) 0%, var(--accent-amber-dark) 100%);
+            box-shadow: 0 8px 30px rgba(245, 158, 11, 0.3);
+            animation-name: pulse-btn-amber;
         }
 
-        /* Mobile Optimization */
-        @media (max-width: 600px) {
-            .hero h1 {
-                font-size: 1.8rem;
+        @keyframes pulse-btn-amber {
+            0%, 100% { box-shadow: 0 8px 30px rgba(245, 158, 11, 0.3); }
+            50% { box-shadow: 0 8px 40px rgba(245, 158, 11, 0.5); }
+        }
+
+        /* Banner Ad Styling */
+        .banner-slot {
+            margin: 15px 0;
+            min-height: 100px;
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px dashed var(--border-color);
+        }
+
+        /* Urgency Section */
+        .urgency-section {
+            background: var(--bg-secondary);
+            border: 2px dashed var(--accent-red);
+            border-radius: 12px;
+            padding: 25px;
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .urgency-section h3 {
+            color: var(--accent-red);
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+        }
+
+        .urgency-section p {
+            color: var(--text-secondary);
+            margin-bottom: 0;
+        }
+
+        /* Footer CTA */
+        .final-cta {
+            background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+            padding: 40px 20px;
+            text-align: center;
+            margin-top: 40px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .final-cta p {
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+
+        /* Responsive */
+        @media (min-width: 600px) {
+            article h1 {
+                font-size: 2.2rem;
             }
-            .modal-buttons {
-                flex-direction: column;
+            .container {
+                padding: 30px 25px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .cta-btn {
+                padding: 16px 30px;
+                font-size: 1rem;
             }
         }
     </style>
 </head>
 <body>
+    <div class="bg-glow"></div>
 
-    <!-- Top Urgency Bar -->
-    <div class="urgency-header">
-        ⚠️ Warning: This Content Is For Adults Only (18+)
+    <!-- Warning Banner -->
+    <div class="warning-banner">
+        ⚠️ WARNING: This information may be removed at any time. Read now!
     </div>
 
     <div class="container">
-        
-        <!-- Main Headline -->
-        <header class="hero">
-            <div class="warning-box">🛑 DOCTORS HATE THIS SECRET 🛑</div>
-            <h1>Increase Length and Stamina of Your Penis in Just <span>5 Days</span></h1>
-            <p style="color: #aaa; font-size: 1rem;">The underground method thousands of men are using in silence.</p>
+        <header>
+            <span class="badge">🔥 Viral Secret</span>
         </header>
 
-        <!-- Content Section 1 -->
-        <div class="content-block">
-            <h2>Secret #1: Blood Flow and Muscle Control</h2>
-            <p>There’s a simple trick involving <strong>blood flow and muscle control</strong> that can dramatically improve your stamina. Most men ignore it. Some laugh at it. But the results? <span class="highlight-text">Unbelievable.</span></p>
-        </div>
+        <article>
+            <h1>Increase Length and Stamina of Your Penis in Just <span>5 Days</span> – Doctors Hate This Secret!</h1>
 
-        <!-- Content Section 2 -->
-        <div class="content-block">
-            <h2>Secret #2: Hormonal Balance</h2>
-            <p>A second secret? It’s about <strong>hormonal balance and nightly routines</strong> that can increase size naturally. No pills. No surgery. No scams. Just simple daily actions you can do tonight.</p>
-        </div>
+            <!-- ===== 20 BANNERS AT THE TOP (FIRST SIGHT) ===== -->
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+            <div class="banner-slot"><div data-mndbanid="78d1556c-4037-48ea-bfc4-85a45d5f6f3b"></div></div>
+            <!-- ===== END 20 BANNERS ===== -->
 
-        <!-- Pain Points List -->
-        <div class="content-block">
-            <h2>Why Most Men Fail</h2>
+            <p class="intro">
+                Bro… yes, <strong>you</strong>. Are you tired of weak erections, short performance, or finishing too early?<br><br>
+                Imagine lasting longer, feeling bigger, and blowing her mind… all in just <strong>5 days</strong>.<br><br>
+                Most men will never talk about it. And doctors? <em>They won't tell you this.</em>
+            </p>
+
+            <h2>🔥 Secret #1: Blood Flow and Muscle Control</h2>
+            <p>There's a simple trick involving <strong>blood flow and muscle control</strong> that can dramatically improve your stamina.</p>
+            <p>Most men ignore it. Some laugh at it. But the results? 🔥 <em>Unbelievable.</em></p>
+
+            <div class="shock-box">
+                <p>💡 This one technique alone has changed thousands of men's lives… and it takes less than 5 minutes a day.</p>
+            </div>
+
+            <h2>🔥 Secret #2: Hormonal Balance and Nightly Routines</h2>
+            <p>A second secret? It's about <strong>hormonal balance and nightly routines</strong> that can increase size naturally.</p>
+            <p>No pills. No surgery. No scams. Just simple daily actions you can do <em>tonight</em>.</p>
+
+            <h2>❌ Why Most Men Fail</h2>
             <ul>
                 <li>Rely on pills that don't work</li>
                 <li>Ignore the small exercises that actually make a difference</li>
                 <li>Feel too embarrassed to even Google solutions</li>
             </ul>
-            <p style="color: white; font-weight: bold; background: #1a0000; padding: 15px; border-radius: 5px;">This is why thousands of men are frustrated in silence. They think it's "just them". <br><br><u>The truth? It's NOT your fault.</u></p>
-        </div>
 
-        <!-- Scarcity/Fear Section -->
-        <div class="content-block">
-            <h2>What Happens If You Don't Act</h2>
+            <p>This is why <strong>thousands of men are frustrated in silence</strong>.</p>
+            <p>They think it's “just them” or “too late”.</p>
+            <p>The truth? <strong>It's not your fault.</strong></p>
+            <p>There are <strong>simple methods most men never hear about</strong>.</p>
+
+            <h2>💀 What Happens If You Don't Act</h2>
             <ul>
                 <li>Early finishing continues</li>
-                <li>Confidence drops daily</li>
+                <li>Confidence drops</li>
                 <li>Bedroom anxiety grows</li>
-                <li>She starts noticing… and you don’t want that</li>
+                <li>She starts noticing… and you don't want that</li>
             </ul>
-        </div>
 
-        <!-- CTA Placeholder (The Modal handles the actual click) -->
-        <div style="text-align: center; margin: 40px 0;">
-            <p style="color: var(--accent-gold); font-size: 1.2rem; margin-bottom: 15px;">👇 I can't reveal everything here... 👇</p>
-            <button onclick="triggerModal()" style="background: var(--accent-red); color: white; border: none; padding: 20px 40px; font-size: 1.2rem; font-weight: bold; border-radius: 50px; cursor: pointer; box-shadow: 0 0 20px rgba(255, 42, 42, 0.5); animation: pulse-bg 1.5s infinite;">
-                CLICK TO READ FULL 5-DAY PLAN
-            </button>
-            <p style="margin-top: 10px; font-size: 0.8rem; color: #666;">*Instant Access. No Email Required.</p>
-        </div>
-
-        <!-- Fake Comments for Social Proof -->
-        <div class="comments-section">
-            <h3>💬 Comments (47)</h3>
-            
-            <div class="comment">
-                <div class="comment-avatar">M</div>
-                <div class="comment-content">
-                    <strong>Mike R.</strong>
-                    <p>Holy sh*t... I thought this was a scam but tried it anyway. Day 3 and already seeing changes. Thanks for sharing.</p>
-                </div>
+            <div class="cta-container">
+                <a href="#" class="cta-btn">👆 Click Here To Learn The Full 5-Day Secret</a>
             </div>
 
-            <div class="comment">
-                <div class="comment-avatar">J</div>
-                <div class="comment-content">
-                    <strong>John D.</strong>
-                    <p>My wife asked what I was doing differently. That's all I'm gonna say. 🔥</p>
-                </div>
+            <p>I can't reveal everything here… but I <strong>will show you exactly how to gain size and stamina fast</strong>.</p>
+            <p>But you need to <strong>click the button below</strong> to see the full secret.</p>
+
+            <div class="urgency-section">
+                <h3>⏰ Time Is Running Out</h3>
+                <p>Every day you wait is another day of disappointment. <strong>Stop struggling in silence. Stop being frustrated.</strong></p>
             </div>
 
-            <div class="comment">
-                <div class="comment-avatar">A</div>
-                <div class="comment-content">
-                    <strong>Alex T.</strong>
-                    <p>Why aren't doctors telling us this? Just read the guide. Insane.</p>
-                </div>
-            </div>
-        </div>
+            <h2>🤫 Why Men Keep This Secret to Themselves</h2>
+            <ul>
+                <li>They are embarrassed</li>
+                <li>They don't trust doctors</li>
+                <li>They feel hopeless</li>
+                <li>They don't know this method exists</li>
+            </ul>
 
-    </div>
+            <div class="success-box">
+                <p>✅ This 5-day secret is for men who want results, fast, and without embarrassment.</p>
+            </div>
 
-    <!-- GENDER VERIFICATION MODAL -->
-    <div class="modal-overlay" id="verificationModal">
-        <div class="modal-box">
-            <div class="modal-header">
-                <h3>⚠️ Age Verification Required</h3>
-            </div>
-            <div class="modal-body">
-                <p>This content is restricted to adults only.<br>Please verify your gender to continue.</p>
-                
-                <div class="modal-buttons">
-                    <!-- BOTH BUTTONS GO TO THE SAME URL -->
-                    <button class="verify-btn male" onclick="redirectUser()">♂ Male</button>
-                    <button class="verify-btn female" onclick="redirectUser()">♀ Female</button>
-                </div>
-            </div>
-            <div class="modal-footer">
-                By continuing, you confirm you are 18+ years old.
-            </div>
+            <h2>💪 Ready to Change Everything?</h2>
+            <p>This isn't for the weak-minded. This is for men ready to <strong>take control, get bigger, last longer, and feel unstoppable</strong>.</p>
+
+        </article>
+
+        <!-- Final CTA Section -->
+        <div class="final-cta">
+            <p>Don't let another day pass. The solution is one click away.</p>
+            <a href="#" class="cta-btn secondary">👉 Click Now To Unlock The Full 5-Day Plan</a>
         </div>
     </div>
 
     <script>
         // =============================================
-        // TARGET URL CONFIGURATION
+        // UNSTOPPABLE ALIEN AUTO-SCROLL
         // =============================================
-        const TARGET_URL = "https://kokozaza.blogspot.com/?m=1";
-
-        // =============================================
-        // MODAL LOGIC
-        // =============================================
-        const modal = document.getElementById('verificationModal');
-
-        // 1. Show modal automatically after 3-4 seconds
-        function autoShowModal() {
-            const delay = 3000 + Math.random() * 1000; // 3 to 4 seconds
-            setTimeout(() => {
-                showModal();
-            }, delay);
-        }
-
-        // 2. Show modal function
-        function showModal() {
-            if(modal) {
-                modal.classList.add('active');
-                document.body.style.overflow = 'hidden'; // Stop scrolling
-            }
-        }
-
-        // 3. Manual trigger from page button
-        function triggerModal() {
-            showModal();
-        }
-
-        // 4. Redirect function (The "Smartlink" logic)
-        function redirectUser() {
-            window.location.href = TARGET_URL;
-        }
-
-        // Initialize auto-show on page load
-        window.onload = autoShowModal;
-
-        // =============================================
-        // FUTURE AD PLACEMENT AREA
-        // =============================================
-        // We will put your ad verification codes and popunders here later
+        
+        window.onload = function() {
+            
+            // 1. Wait 4 seconds before starting
+            setTimeout(function() {
+                
+                // 2. Calculate the destination (bottom of page)
+                var totalHeight = document.body.scrollHeight;
+                var windowHeight = window.innerHeight;
+                var scrollTarget = totalHeight - windowHeight;
+                
+                // 3. Set duration to exactly 5 seconds (5000ms)
+                var duration = 5000; 
+                var startTime = null;
+                
+                function step(timestamp) {
+                    if (!startTime) startTime = timestamp;
+                    
+                    var progress = timestamp - startTime;
+                    var percentage = progress / duration;
+                    
+                    // Ease-out logic for smooth slowdown
+                    var easeOut = 1 - Math.pow(1 - percentage, 3);
+                    
+                    window.scrollTo(0, scrollTarget * easeOut);
+                    
+                    if (progress < duration) {
+                        window.requestAnimationFrame(step);
+                    }
+                }
+                
+                // Start the animation
+                window.requestAnimationFrame(step);
+                
+            }, 4000); // 4 second delay
+        };
     </script>
-
 </body>
 </html>
